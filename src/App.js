@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar bg="white" expand="lg">
-        <Container className="content-width">
+        <Container>
           <Navbar.Brand href="#home" className="text-dark">小田原おしゃべり読書会</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -53,7 +53,6 @@ function App() {
 
       <footer className="bg-white py-3">
         <Container className="content-width">
-          <p className="text-dark">Facebook twitter Hatena LINE</p>
           <Nav className="justify-content-center">
             <Nav.Link href="/" className="text-dark">ホーム</Nav.Link>
             <Nav.Link href="/schedule" className="text-dark">開催予定</Nav.Link>

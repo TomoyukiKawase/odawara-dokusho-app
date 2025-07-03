@@ -66,7 +66,7 @@ section:nth-of-type(odd) li {
 /* Hero section styles */
 .hero-section {
   background-color: #337ab7; /* Use the desired blue color */
-  height: 80px; /* Adjusted height (20% cut from 100px) */
+  height: 64px; /* Adjusted height (80% of 80px) */
   color: white;
   display: flex;
   align-items: center;
@@ -97,7 +97,8 @@ li {
 
 .content-width {
   max-width: 800px; /* Increased width */
-  margin: 0 auto;
+  margin-left: 150px;
+  margin-right: auto;
 }
 
 /* Footer styles */
