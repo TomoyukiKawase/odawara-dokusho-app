@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar bg="white" expand="lg">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#home" className="text-dark">小田原おしゃべり読書会</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
