@@ -9,25 +9,25 @@
 
 /* Update primary colors */
 .text-primary {
-  color: #007bff !important; /* New primary bright blue */
+  color: #337ab7 !important; /* New primary blue */
 }
 
 .bg-primary {
-  background-color: #007bff !important; /* New primary bright blue */
+  background-color: #337ab7 !important; /* New primary blue */
 }
 
 .btn-primary {
-  background-color: #007bff !important;
-  border-color: #007bff !important;
+  background-color: #337ab7 !important;
+  border-color: #337ab7 !important;
 }
 
 .btn-outline-primary {
-  color: #007bff !important;
-  border-color: #007bff !important;
+  color: #337ab7 !important;
+  border-color: #337ab7 !important;
 }
 
 .btn-outline-primary:hover {
-  background-color: #007bff !important;
+  background-color: #337ab7 !important;
   color: white !important;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .card-title {
-  color: #007bff; /* New primary bright blue */
+  color: #337ab7; /* New primary blue */
 }
 
 /* Existing section styles */
@@ -47,12 +47,19 @@ section {
 }
 
 section:nth-of-type(odd) {
-  background-color: #f8f9fa; /* Keep light background for odd sections */
+  background-color: #337ab7; /* Change gray to blue */
+}
+
+section:nth-of-type(odd) h2,
+section:nth-of-type(odd) h3,
+section:nth-of-type(odd) p,
+section:nth-of-type(odd) li {
+  color: white; /* Change text to white on blue background */
 }
 
 /* Update footer background to new primary color */
 footer {
-  background-color: #007bff; /* New primary bright blue */
+  background-color: #337ab7; /* New primary blue */
   color: white;
   padding: 20px 0;
 }
@@ -111,6 +118,6 @@ li {
 }
 
 .content-width {
-  max-width: 960px; /* Increased width */
+  max-width: 800px; /* Increased width */
   margin: 0 auto;
 }

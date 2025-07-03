@@ -52,7 +52,7 @@ function App() {
         </Container>
       </section>
 
-      <footer className="bg-primary text-white text-center py-3">
+      <footer className="bg-primary text-white py-3">
         <Container>
           <p>Facebook twitter Hatena LINE</p>
           <Nav className="justify-content-center">
