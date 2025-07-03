@@ -9,25 +9,25 @@
 
 /* Update primary colors */
 .text-primary {
-  color: #34495e !important; /* New primary dark blue */
+  color: #007bff !important; /* New primary bright blue */
 }
 
 .bg-primary {
-  background-color: #34495e !important; /* New primary dark blue */
+  background-color: #007bff !important; /* New primary bright blue */
 }
 
 .btn-primary {
-  background-color: #34495e !important;
-  border-color: #34495e !important;
+  background-color: #007bff !important;
+  border-color: #007bff !important;
 }
 
 .btn-outline-primary {
-  color: #34495e !important;
-  border-color: #34495e !important;
+  color: #007bff !important;
+  border-color: #007bff !important;
 }
 
 .btn-outline-primary:hover {
-  background-color: #34495e !important;
+  background-color: #007bff !important;
   color: white !important;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .card-title {
-  color: #34495e; /* New primary dark blue */
+  color: #007bff; /* New primary bright blue */
 }
 
 /* Existing section styles */
@@ -52,7 +52,7 @@ section:nth-of-type(odd) {
 
 /* Update footer background to new primary color */
 footer {
-  background-color: #34495e; /* New primary dark blue */
+  background-color: #007bff; /* New primary bright blue */
   color: white;
   padding: 20px 0;
 }
@@ -111,6 +111,6 @@ li {
 }
 
 .content-width {
-  max-width: 690px;
+  max-width: 960px; /* Increased width */
   margin: 0 auto;
 }
