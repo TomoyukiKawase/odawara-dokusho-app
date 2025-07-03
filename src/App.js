@@ -1,27 +1,13 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import FAQ from './FAQ'; // FAQコンポーネントをインポート
 
 function App() {
 
-  return (
-    <div className="App">
-      <Navbar bg="white" expand="lg">
-        <Container className="content-width">
-          <Navbar.Brand href="#home" className="text-dark">小田原おしゃべり読書会</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link href="/" className="text-dark">ホーム</Nav.Link>
-                <Nav.Link href="/schedule" className="text-dark">開催予定</Nav.Link>
-                <Nav.Link href="/faq" className="text-dark">よくある質問</Nav.Link>
-                <Nav.Link href="/blog" className="text-dark">ブログ</Nav.Link>
-                <Nav.Link href="/contact" className="text-dark">お問い合わせ</Nav.Link>
-              </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+  const Home = () => (
+    <>
       <section className="hero-section bg-primary text-white d-flex align-items-center justify-content-center">
         <Container className="content-width">
           <h1>この読書会について</h1>
@@ -50,21 +36,48 @@ function App() {
           </ul>
         </Container>
       </section>
+    </>
+  );
 
-      <footer className="bg-white py-3">
-        <Container className="content-width">
-          <Nav className="justify-content-center">
-            <Nav.Link href="/" className="text-dark">ホーム</Nav.Link>
-            <Nav.Link href="/schedule" className="text-dark">開催予定</Nav.Link>
-            <Nav.Link href="/faq" className="text-dark">よくある質問</Nav.Link>
-            <Nav.Link href="/blog" className="text-dark">ブログ</Nav.Link>
-            <Nav.Link href="/privacy" className="text-dark">プライバシーポリシー</Nav.Link>
-            <Nav.Link href="/contact" className="text-dark">お問い合わせ</Nav.Link>
-          </Nav>
-          <p className="text-dark">&copy; 2025 . All rights reserved.</p>
-        </Container>
-      </footer>
-    </div>
+  return (
+    <Router>
+      <div className="App">
+        <Navbar bg="white" expand="lg">
+          <Container className="content-width">
+            <Navbar.Brand as={Link} to="/" className="text-dark">小田原おしゃべり読書会</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                  <Nav.Link as={Link} to="/" className="text-dark">ホーム</Nav.Link>
+                  <Nav.Link as={Link} to="/schedule" className="text-dark">開催予定</Nav.Link>
+                  <Nav.Link as={Link} to="/faq" className="text-dark">よくある質問</Nav.Link>
+                  <Nav.Link as={Link} to="/blog" className="text-dark">ブログ</Nav.Link>
+                  <Nav.Link as={Link} to="/contact" className="text-dark">お問い合わせ</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/faq" element={<FAQ />} />
+        </Routes>
+
+        <footer className="bg-white py-3">
+          <Container className="content-width">
+            <Nav className="justify-content-center">
+              <Nav.Link as={Link} to="/" className="text-dark">ホーム</Nav.Link>
+              <Nav.Link as={Link} to="/schedule" className="text-dark">開催予定</Nav.Link>
+              <Nav.Link as={Link} to="/faq" className="text-dark">よくある質問</Nav.Link>
+              <Nav.Link as={Link} to="/blog" className="text-dark">ブログ</Nav.Link>
+              <Nav.Link as={Link} to="/privacy" className="text-dark">プライバシーポリシー</Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="text-dark">お問い合わせ</Nav.Link>
+            </Nav>
+            <p className="text-dark">&copy; 2025 . All rights reserved.</p>
+          </Container>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
