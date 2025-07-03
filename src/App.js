@@ -73,7 +73,10 @@ function App() {
             <li>基本的に参加費500円</li>
             <li>但し学生及びオンライン初参加の方は無料</li>
           </ul>
-        <footer className="bg-primary text-white text-center py-3">
+        </Container>
+      </section>
+
+      <footer className="bg-primary text-white text-center py-3">
         <Container>
           <p>Facebook twitter Hatena LINE</p>
           <Nav className="justify-content-center">
