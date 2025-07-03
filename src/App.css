@@ -2,11 +2,6 @@
   /* text-align: center; */ /* Remove global text centering */
 }
 
-.navbar-brand {
-  font-weight: bold;
-  color: white !important; /* Ensure brand text is white on dark navbar */
-}
-
 /* Update primary colors */
 .text-primary {
   color: #337ab7 !important; /* New primary blue */
@@ -55,13 +50,6 @@ section:nth-of-type(odd) h3,
 section:nth-of-type(odd) p,
 section:nth-of-type(odd) li {
   color: white; /* Change text to white on blue background */
-}
-
-/* Update footer background to new primary color */
-footer {
-  background-color: #337ab7; /* New primary blue */
-  color: white;
-  padding: 20px 0;
 }
 
 /* Existing hero-section styles */
