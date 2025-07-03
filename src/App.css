@@ -97,8 +97,7 @@ li {
 
 .content-width {
   max-width: 800px; /* Increased width */
-  margin-left: 150px;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* Footer styles */
