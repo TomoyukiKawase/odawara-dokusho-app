@@ -10,7 +10,7 @@
 .navbar-brand {
   font-weight: bold;
   color: #333 !important; /* Ensure brand text is dark on white navbar */
-  font-size: 1.5rem; /* Adjust font size to make it smaller */
+  font-size: 2rem; /* Adjusted font size (swapped with hero h1) */
 }
 
 /* Update primary colors */
@@ -66,7 +66,7 @@ section:nth-of-type(odd) li {
 /* Hero section styles */
 .hero-section {
   background-color: #337ab7; /* Use the desired blue color */
-  height: 100px; /* Adjusted height */
+  height: 80px; /* Adjusted height (20% cut from 100px) */
   color: white;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@ section:nth-of-type(odd) li {
 }
 
 .hero-section h1 {
-  font-size: 2rem; /* Adjusted font size */
+  font-size: 1.5rem; /* Adjusted font size (swapped with navbar-brand) */
   margin-bottom: 0; /* Remove margin */
 }
 
