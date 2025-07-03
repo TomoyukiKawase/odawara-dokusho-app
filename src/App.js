@@ -42,21 +42,15 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#about">読書会について</Nav.Link>
-              <Nav.Link href="#schedule">開催スケジュール</Nav.Link>
-              <Nav.Link href="#join">参加方法</Nav.Link>
-              <Nav.Link href="#contact">お問い合わせ</Nav.Link>
-            </Nav>
+                <Nav.Link href="/">ホーム</Nav.Link>
+                <Nav.Link href="/schedule">開催予定</Nav.Link>
+                <Nav.Link href="/faq">よくある質問</Nav.Link>
+                <Nav.Link href="/blog">ブログ</Nav.Link>
+                <Nav.Link href="/contact">お問い合わせ</Nav.Link>
+              </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <header className="App-header text-center py-5 bg-light">
-        <Container>
-          <h1 className="display-4 text-primary">本を語り、人を知る。</h1>
-          <p className="lead text-secondary">小田原おしゃべり読書会は、本を通じて新しい出会いと発見を提供するコミュニティです。</p>
-        </Container>
-      </header>
 
       <section id="about" className="py-5">
         <Container>
@@ -79,61 +73,18 @@ function App() {
             <li>基本的に参加費500円</li>
             <li>但し学生及びオンライン初参加の方は無料</li>
           </ul>
-        </Container>
-      </section>
-
-      <section id="schedule" className="py-5 bg-light">
+        <footer className="bg-primary text-white text-center py-3">
         <Container>
-          <h2 className="text-center mb-4 text-primary">開催スケジュール</h2>
-          <div className="row">
-            <div className="col-md-6 mb-4">
-              <Card>
-                <Card.Body>
-                  <Card.Title className="text-primary">次回開催予定</Card.Title>
-                  <Card.Text>
-                    日時: 毎月第3土曜日 14:00〜16:00<br />
-                    場所: 小田原駅周辺のカフェ（詳細は参加者にご連絡します）<br />
-                    参加費: 500円
-                  </Card.Text>
-                  <Button variant="primary">詳細を見る</Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col-md-6 mb-4">
-              <Card>
-                <Card.Body>
-                  <Card.Title className="text-primary">オンライン読書会</Card.Title>
-                  <Card.Text>
-                    日時: 不定期開催（詳細はSNSでお知らせします）<br />
-                    場所: Zoom<br />
-                    参加費: 無料（学生・初回参加者）
-                  </Card.Text>
-                  <Button variant="outline-primary">オンライン読書会に参加</Button>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section id="join" className="py-5">
-        <Container>
-          <h2 className="text-center mb-4 text-primary">参加方法</h2>
-          <p>読書会への参加は簡単です。以下のステップでご参加いただけます。</p>
-          <ol>
-            <li>当ウェブサイトまたはSNSで最新の開催情報を確認します。</li>
-            <li>参加を希望する読書会に申し込みます。（オンライン決済はこちらから）</li>
-            <li>当日、お気に入りの本を持参して会場にお越しください。</li>
-          </ol>
-          <div className="text-center mt-4">
-            <Button variant="success" size="lg" onClick={handleCheckout}>参加を申し込む</Button>
-          </div>
-        </Container>
-      </section>
-
-      <footer className="bg-primary text-white text-center py-3">
-        <Container>
-          <p>&copy; 2025 小田原おしゃべり読書会. All rights reserved.</p>
+          <p>Facebook twitter Hatena LINE</p>
+          <Nav className="justify-content-center">
+            <Nav.Link href="/" className="text-white">ホーム</Nav.Link>
+            <Nav.Link href="/schedule" className="text-white">開催予定</Nav.Link>
+            <Nav.Link href="/faq" className="text-white">よくある質問</Nav.Link>
+            <Nav.Link href="/blog" className="text-white">ブログ</Nav.Link>
+            <Nav.Link href="/privacy" className="text-white">プライバシーポリシー</Nav.Link>
+            <Nav.Link href="/contact" className="text-white">お問い合わせ</Nav.Link>
+          </Nav>
+          <p>&copy; 2025 . All rights reserved.</p>
         </Container>
       </footer>
     </div>
