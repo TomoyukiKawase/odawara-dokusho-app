@@ -22,6 +22,13 @@ function App() {
         </Container>
       </Navbar>
 
+      <section className="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <Container>
+          <h1 className="display-4">小田原おしゃべり読書会</h1>
+          <p className="lead">読書習慣を身につけるために</p>
+        </Container>
+      </section>
+
       <section id="about" className="py-5">
         <Container>
           <h2 className="text-center mb-4 text-primary">読書会について</h2>
