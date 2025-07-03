@@ -23,11 +23,6 @@ function FAQ() {
         <h3 className="text-primary mt-4">Q5.すごい読書家の方ばかりですか？不安です。</h3>
         <p>A5.できる限り敷居の低いゆるい会を目指しています。また普段本を読まない方が本を読む機会作るために使って頂けると嬉しいです。</p>
 
-        <h3 className="text-primary mt-4">Q6.オンラインでの参加方法を教えて下さい。</h3>
-        <p>A6.当日用のURLは参加者の方に個別にご連絡します。</p>
-        <p>参加方法は端末種類ごとに異なります</p>
-        <p>→ PC Android iOS</p>
-
       </Container>
     </section>
   );

@@ -57,14 +57,14 @@ section {
 }
 
 section:nth-of-type(odd) {
-  background-color: #337ab7; /* Change gray to blue */
+  background-color: white; /* Change to white */
 }
 
 section:nth-of-type(odd) h2,
 section:nth-of-type(odd) h3,
 section:nth-of-type(odd) p,
 section:nth-of-type(odd) li {
-  color: white; /* Change text to white on blue background */
+  color: #333; /* Change text to dark on white background */
 }
 
 /* Hero section styles */
