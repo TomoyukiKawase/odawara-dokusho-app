@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar bg="white" expand="lg">
-        <Container>
+        <Container className="content-width">
           <Navbar.Brand href="#home" className="text-dark">小田原おしゃべり読書会</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -21,11 +21,6 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <section className="hero-section text-white d-flex align-items-center justify-content-center">
-        <Container>
-        </Container>
-      </section>
 
       <section id="about" className="py-5">
         <Container className="content-width">
@@ -51,7 +46,7 @@ function App() {
       </section>
 
       <footer className="bg-white py-3">
-        <Container>
+        <Container className="content-width">
           <p className="text-dark">Facebook twitter Hatena LINE</p>
           <Nav className="justify-content-center">
             <Nav.Link href="/" className="text-dark">ホーム</Nav.Link>
