@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Container, Nav, Card, Button } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import { loadStripe } from '@stripe/stripe-js';
 import './App.css';
 
@@ -8,31 +8,6 @@ import './App.css';
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY || 'YOUR_STRIPE_PUBLISHABLE_KEY');
 
 function App() {
-  const handleCheckout = async () => {
-    const stripe = await stripePromise;
-
-    // Netlify Functionを呼び出してStripeのチェックアウトセッションを作成します。
-    const response = await fetch('/.netlify/functions/create-checkout-session', {
-      method: 'POST',
-    });
-
-    const session = await response.json();
-
-    // エラーハンドリング
-    if (session.error) {
-      alert(session.error);
-      return;
-    }
-
-    // Stripeのチェックアウトページにリダイレクトします。
-    const result = await stripe.redirectToCheckout({
-      sessionId: session.sessionId,
-    });
-
-    if (result.error) {
-      alert(result.error.message);
-    }
-  };
 
   return (
     <div className="App">
