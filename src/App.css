@@ -2,6 +2,17 @@
   /* text-align: center; */ /* Remove global text centering */
 }
 
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #333 !important; /* Ensure brand text is dark on white navbar */
+  font-size: 1.5rem; /* Adjust font size to make it smaller */
+}
+
 /* Update primary colors */
 .text-primary {
   color: #337ab7 !important; /* New primary blue */
@@ -108,4 +119,11 @@ li {
 .content-width {
   max-width: 800px; /* Increased width */
   margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+  background-color: #337ab7; /* New primary blue */
+  color: white;
+  padding: 20px 0;
 }
