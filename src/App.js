@@ -22,7 +22,7 @@ function App() {
         </Container>
       </Navbar>
 
-      <section className="hero-section text-center text-white d-flex align-items-center justify-content-center">
+      <section className="hero-section text-white d-flex align-items-center justify-content-center">
         <Container>
           <h1 className="display-4">小田原おしゃべり読書会</h1>
           <p className="lead">読書習慣を身につけるために</p>
@@ -31,7 +31,6 @@ function App() {
 
       <section id="about" className="py-5">
         <Container>
-          <h2 className="text-center mb-4 text-primary">読書会について</h2>
           <p>神奈川県小田原市で月に一度開催している紹介型の読書会です。</p>
           <p>普段本なんて読まないけどちょっと興味のある方、本がそこそこ好きな方、本が大好きな方、そんな方々に来て頂きたいミニイベントです。</p>
           <p>「読書会」って何？って方も多いと思います。読書会に決まったスタイルはありませんが、この会では本を話のネタに皆でおしゃべりを楽しむことを最大の目的としています。なので紹介したい本はなくても、他の方が本を紹介するのに耳を傾けつつおしゃべりに加わるというのも全然アリです。基本的な流れは以下の通りです。</p>
