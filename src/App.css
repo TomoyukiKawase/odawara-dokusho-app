@@ -97,7 +97,7 @@ li {
 
 .content-width {
   max-width: 800px; /* Increased width */
-  margin-left: calc(50% - 440px); /* Shift 40px to the left from center (800/2 + 40 = 440) */
+  margin-left: calc(50% - 450px); /* Shift 50px to the left from center */
   margin-right: auto;
 }
 
