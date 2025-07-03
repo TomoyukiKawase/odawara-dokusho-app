@@ -1,11 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { loadStripe } from '@stripe/stripe-js';
 import './App.css';
-
-// Stripeの公開可能キーを設定します。これは環境変数から取得するか、直接記述します。
-// 実際のアプリケーションでは、環境変数を使用することを強く推奨します。
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY || 'YOUR_STRIPE_PUBLISHABLE_KEY');
 
 function App() {
 
