@@ -63,7 +63,20 @@ section:nth-of-type(odd) li {
   color: white; /* Change text to white on blue background */
 }
 
+/* Hero section styles */
+.hero-section {
+  background-color: #337ab7; /* Use the desired blue color */
+  height: 100px; /* Adjusted height */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.hero-section h1 {
+  font-size: 2rem; /* Adjusted font size */
+  margin-bottom: 0; /* Remove margin */
+}
 
 /* Global font-family */
 body {
