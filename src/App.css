@@ -75,6 +75,10 @@ section:nth-of-type(odd) li {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('https://www.odw-dokusho.com/wp-content/uploads/2023/09/cropped-IMG_0001-scaled-1.jpg'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-section h1 {
