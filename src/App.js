@@ -1,6 +1,8 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faLine, faHatena } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 import FAQ from './FAQ'; // FAQコンポーネントをインポート
 
@@ -65,6 +67,12 @@ function App() {
 
         <footer className="bg-white py-3">
           <Container className="content-width">
+            <div className="d-flex justify-content-center mb-2">
+              <a href="#" className="text-dark mx-2"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+              <a href="#" className="text-dark mx-2"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+              <a href="#" className="text-dark mx-2"><FontAwesomeIcon icon={faLine} size="2x" /></a>
+              <a href="#" className="text-dark mx-2"><FontAwesomeIcon icon={faHatena} size="2x" /></a>
+            </div>
             <Nav className="justify-content-center">
               <Nav.Link as={Link} to="/" className="text-dark">ホーム</Nav.Link>
               <Nav.Link as={Link} to="/schedule" className="text-dark">開催予定</Nav.Link>
